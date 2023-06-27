@@ -12,10 +12,10 @@
     node-fetch "2"
     reflect-metadata "^0.1.13"
 
-"@alien-worlds/api-history-tools@^0.0.132":
-  version "0.0.132"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/api-history-tools/0.0.132/322cb2a98e0f6f498554fb5d09fc84bde85fbd4c#322cb2a98e0f6f498554fb5d09fc84bde85fbd4c"
-  integrity sha512-+TfL5mJT+7so1z57mA0YXGVeankZJYOUIfhWb9SnWw1rWhI3Rhb/gvQ06/f1DjtGeINtSaS2tOTDEceFnhre4w==
+"@alien-worlds/api-history-tools@^0.0.136":
+  version "0.0.136"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/api-history-tools/0.0.136/e440030f8cf381612871893fcadbd120b70c1a32#e440030f8cf381612871893fcadbd120b70c1a32"
+  integrity sha512-vA7sDQvbvQlxeROsrKSyPNKrKbKHmZa3M/RJVQBvgbLfDUGJsfR85szUcHFFrkG6PnSMuxxPWwXyoh1walE5OA==
   dependencies:
     "@alien-worlds/history-tools-common" "^0.0.36"
     async "^3.2.4"
@@ -59,10 +59,10 @@
     "@alien-worlds/workers" "^0.0.6"
     node-fetch "2"
 
-"@alien-worlds/history-tools-default-dependencies@^0.0.24":
-  version "0.0.24"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/history-tools-default-dependencies/0.0.24/ab111e8742ba2d63944ade85b7ea4132b784743e#ab111e8742ba2d63944ade85b7ea4132b784743e"
-  integrity sha512-QhUfrmqSfFOeCoTVDdYBNC1RfLPtCR09GShdo+RSHxQHsDNJ2PTEghlf5RRHFbhALejCQPmG750UZ7DJCSPIzg==
+"@alien-worlds/history-tools-default-dependencies@^0.0.27":
+  version "0.0.27"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/history-tools-default-dependencies/0.0.27/63fff098dfd175fda37b0e6e4a51113750e03263#63fff098dfd175fda37b0e6e4a51113750e03263"
+  integrity sha512-InHsO+DkVznWVQn2c5+wfL4mMas4Ah2YIk9ADlYyofO3SCfYxdex50IXU58SDwqnAve7YC2gHzZCxes+vzuyuQ==
   dependencies:
     "@alien-worlds/eos" "^0.0.16"
     "@alien-worlds/history-tools-common" "^0.0.36"
