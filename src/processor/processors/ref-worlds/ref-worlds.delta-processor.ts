@@ -8,11 +8,11 @@ import {
   RepositoryImpl,
   log,
 } from '@alien-worlds/history-tools-starter-kit';
-import { Deltas } from '@alien-worlds/dao-worlds-common';
+import { Deltas } from '@alien-worlds/ref-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class DaoWorldsDeltaProcessor extends DeltaProcessor<
+export default class RefWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {
@@ -22,14 +22,14 @@ export default class DaoWorldsDeltaProcessor extends DeltaProcessor<
         dependencies: { dataSource },
       } = this;
 
-      const mongoMapper = new Deltas.Mappers.DaoWorldsDeltaMongoMapper();
-      const source = new Deltas.DaoWorldsDeltaMongoSource(dataSource as MongoSource);
+      const mongoMapper = new Deltas.Mappers.RefWorldsDeltaMongoMapper();
+      const source = new Deltas.RefWorldsDeltaMongoSource(dataSource as MongoSource);
       const repository = new RepositoryImpl(
         source,
         mongoMapper,
         new MongoQueryBuilders(mongoMapper)
       );
-      const taskModelMapper = new Deltas.Mappers.DaoWorldsDeltaProcessorTaskMapper();
+      const taskModelMapper = new Deltas.Mappers.RefWorldsDeltaProcessorTaskMapper();
       const contract = taskModelMapper.toEntity(model);
       const result = await repository.add([contract]);
 

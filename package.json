@@ -40,7 +40,10 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "@alien-worlds/api-history-tools": "^0.0.136",
-    "@alien-worlds/history-tools-default-dependencies": "^0.0.27"
+    "@alien-worlds/dao-worlds-common": "^0.0.15",
+    "@alien-worlds/history-tools-starter-kit": "^0.0.4",
+    "@alien-worlds/index-worlds-common": "^0.0.15",
+    "@alien-worlds/stkvt-worlds-common": "^0.0.7",
+    "@alien-worlds/token-worlds-common": "^0.0.16"
   }
 }

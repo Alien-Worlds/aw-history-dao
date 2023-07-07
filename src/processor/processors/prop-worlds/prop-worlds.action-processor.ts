@@ -1,6 +1,6 @@
 import {
-  DeltaProcessor,
-  DeltaProcessorModel,
+  ActionTraceProcessor,
+  ActionTraceProcessorModel,
   DataSourceError,
   MongoQueryBuilders,
   MongoSource,
@@ -8,28 +8,28 @@ import {
   RepositoryImpl,
   log,
 } from '@alien-worlds/history-tools-starter-kit';
-import { Deltas } from '@alien-worlds/dao-worlds-common';
+import { Actions } from '@alien-worlds/prop-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class DaoWorldsDeltaProcessor extends DeltaProcessor<
+export default class PropWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {
-  public async run(model: DeltaProcessorModel<ContractData>): Promise<void> {
+  public async run(model: ActionTraceProcessorModel<ContractData>): Promise<void> {
     try {
       const {
         dependencies: { dataSource },
       } = this;
 
-      const mongoMapper = new Deltas.Mappers.DaoWorldsDeltaMongoMapper();
-      const source = new Deltas.DaoWorldsDeltaMongoSource(dataSource as MongoSource);
+      const mongoMapper = new Actions.Mappers.PropWorldsActionMongoMapper();
+      const source = new Actions.PropWorldsActionMongoSource(dataSource as MongoSource);
       const repository = new RepositoryImpl(
         source,
         mongoMapper,
         new MongoQueryBuilders(mongoMapper)
       );
-      const taskModelMapper = new Deltas.Mappers.DaoWorldsDeltaProcessorTaskMapper();
+      const taskModelMapper = new Actions.Mappers.PropWorldsActionProcessorTaskMapper();
       const contract = taskModelMapper.toEntity(model);
       const result = await repository.add([contract]);
 
