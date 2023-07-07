@@ -8,14 +8,14 @@ The contract components are implemented through the `@alien-worlds/<contract_nam
 
 This package is dependent on the following packages:
 
-[@alien-worlds/history-tools-starter-kit](https://github.com/Alien-Worlds/history-tools-starter-kit)
-[@alien-worlds/dao-worlds-common](https://github.com/Alien-Worlds/dao-worlds-common)
-[@alien-worlds/index-worlds-common](https://github.com/Alien-Worlds/index-worlds-common)
-[@alien-worlds/stkvt-worlds-common](https://github.com/Alien-Worlds/stkvt-worlds-common)
-[@alien-worlds/token-worlds-common](https://github.com/Alien-Worlds/token-worlds-common)
-[@alien-worlds/ref-worlds-common](https://github.com/Alien-Worlds/ref-worlds-common)
-[@alien-worlds/prop-worlds-common](https://github.com/Alien-Worlds/prop-worlds-common)
-[@alien-worlds/escrw-worlds-common](https://github.com/Alien-Worlds/escrw-worlds-common)
+- [@alien-worlds/history-tools-starter-kit](https://github.com/Alien-Worlds/history-tools-starter-kit)
+- [@alien-worlds/dao-worlds-common](https://github.com/Alien-Worlds/dao-worlds-common)
+- [@alien-worlds/index-worlds-common](https://github.com/Alien-Worlds/index-worlds-common)
+- [@alien-worlds/stkvt-worlds-common](https://github.com/Alien-Worlds/stkvt-worlds-common)
+- [@alien-worlds/token-worlds-common](https://github.com/Alien-Worlds/token-worlds-common)
+- [@alien-worlds/ref-worlds-common](https://github.com/Alien-Worlds/ref-worlds-common)
+- [@alien-worlds/prop-worlds-common](https://github.com/Alien-Worlds/prop-worlds-common)
+- [@alien-worlds/escrw-worlds-common](https://github.com/Alien-Worlds/escrw-worlds-common)
 
 ## Table of Contents
 
@@ -46,20 +46,20 @@ This package is dependent on the following packages:
 To run the tools, you must first select the mode: `default` (to download current data) or `replay` (to download a specific range of blocks). If you choose replay, set the start and end block as well. Having all the configuration, create a separate session for each of the processes and start them. The order doesn't matter but the starting point is `broadcast` followed by `boot`.
 
 ```shell
-  # first session
-  yarn broadcast
+# first session
+yarn broadcast
 
-  # second session
-  yarn boot
+# second session
+yarn boot
 
-  # third session
-  yarn reader
+# third session
+yarn reader
 
-  # fourth session
-  yarn filter
+# fourth session
+yarn filter
 
-  # fifth session
-  yarn processor
+# fifth session
+yarn processor
 ```
 
 ## Tutorials
