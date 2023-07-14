@@ -15,7 +15,7 @@ import { updateUserVotes } from './processors/user-votes/upadte-user-votes';
 
 type ContractData = { [key: string]: unknown };
 
-export default class DaoWorldsActionProcessor extends ActionTraceProcessor<
+export class DaoWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

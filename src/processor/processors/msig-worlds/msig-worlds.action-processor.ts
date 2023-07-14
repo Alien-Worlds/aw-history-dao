@@ -12,7 +12,7 @@ import { Actions } from '@alien-worlds/msig-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class MsigWorldsActionProcessor extends ActionTraceProcessor<
+export class MsigWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

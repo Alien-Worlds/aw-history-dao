@@ -12,7 +12,7 @@ import { Actions } from '@alien-worlds/stkvt-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class StkvtWorldsActionProcessor extends ActionTraceProcessor<
+export class StkvtWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

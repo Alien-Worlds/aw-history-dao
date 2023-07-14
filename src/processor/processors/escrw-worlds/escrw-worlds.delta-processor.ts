@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/escrw-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class EscrwWorldsDeltaProcessor extends DeltaProcessor<
+export class EscrwWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

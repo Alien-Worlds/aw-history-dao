@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/msig-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class MsigWorldsDeltaProcessor extends DeltaProcessor<
+export class MsigWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

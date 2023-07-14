@@ -1,12 +1,21 @@
-import { MapperImpl, MongoDB } from '@alien-worlds/history-tools-starter-kit';
+import {
+  MongoDB,
+  MongoMapper,
+  UnknownObject,
+} from '@alien-worlds/history-tools-starter-kit';
 import { UserVote } from '../../domain/entities/user-vote';
 import { UserVoteMongoModel } from '../dtos/user-vote.dto';
 import { VoteAction } from '../../domain/user-vote.enums';
 
 // Mongo Mappers
-export class UserVoteMongoMapper extends MapperImpl<UserVote, UserVoteMongoModel> {
+export class UserVoteMongoMapper extends MongoMapper<UserVote, UserVoteMongoModel> {
   constructor() {
     super();
+
+    this.mappingFromEntity.set('rest', {
+      key: 'rest',
+      mapper: (value: UnknownObject) => value,
+    });
 
     this.mappingFromEntity.set('dacId', {
       key: 'dac_id',

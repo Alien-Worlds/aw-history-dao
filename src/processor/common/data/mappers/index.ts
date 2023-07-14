@@ -1,1 +1,1 @@
-export * from './user-vote.mapper';
+export * from './user-vote.mongo.mapper';

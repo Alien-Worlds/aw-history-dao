@@ -12,7 +12,7 @@ import { Actions } from '@alien-worlds/escrw-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class EscrwWorldsActionProcessor extends ActionTraceProcessor<
+export class EscrwWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/prop-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class PropWorldsDeltaProcessor extends DeltaProcessor<
+export class PropWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

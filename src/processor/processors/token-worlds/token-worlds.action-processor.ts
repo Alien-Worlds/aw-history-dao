@@ -15,7 +15,7 @@ import { TokenWorldsActionMongoModel } from '@alien-worlds/token-worlds-common/b
 
 type ContractData = { [key: string]: unknown };
 
-export default class TokenWorldsActionProcessor extends ActionTraceProcessor<
+export class TokenWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

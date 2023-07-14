@@ -5,7 +5,7 @@
       "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
       "contract": ["dao.worlds"],
       "action": ["*"],
-      "processor": "DaoWorldsTraceProcessor"
+      "processor": "DaoWorldsActionProcessor"
     }
   ],
   "deltas": [

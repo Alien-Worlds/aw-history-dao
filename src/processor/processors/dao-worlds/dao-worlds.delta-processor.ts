@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/dao-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class DaoWorldsDeltaProcessor extends DeltaProcessor<
+export class DaoWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

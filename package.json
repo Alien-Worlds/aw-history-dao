@@ -40,14 +40,14 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "@alien-worlds/dao-worlds-common": "^0.0.19",
-    "@alien-worlds/escrw-worlds-common": "^0.0.4",
-    "@alien-worlds/history-tools-starter-kit": "^0.0.5",
-    "@alien-worlds/index-worlds-common": "^0.0.17",
-    "@alien-worlds/msig-worlds-common": "^0.0.1",
-    "@alien-worlds/prop-worlds-common": "^0.0.4",
-    "@alien-worlds/ref-worlds-common": "^0.0.1",
-    "@alien-worlds/stkvt-worlds-common": "^0.0.11",
-    "@alien-worlds/token-worlds-common": "^0.0.19"
+    "@alien-worlds/dao-worlds-common": "^0.0.23",
+    "@alien-worlds/escrw-worlds-common": "^0.0.8",
+    "@alien-worlds/history-tools-starter-kit": "^0.0.6",
+    "@alien-worlds/index-worlds-common": "^0.0.22",
+    "@alien-worlds/msig-worlds-common": "^0.0.5",
+    "@alien-worlds/prop-worlds-common": "^0.0.9",
+    "@alien-worlds/ref-worlds-common": "^0.0.6",
+    "@alien-worlds/stkvt-worlds-common": "^0.0.16",
+    "@alien-worlds/token-worlds-common": "^0.0.24"
   }
 }

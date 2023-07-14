@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/stkvt-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class StkvtWorldsDeltaProcessor extends DeltaProcessor<
+export class StkvtWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

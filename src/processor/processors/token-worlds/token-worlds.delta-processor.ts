@@ -12,7 +12,7 @@ import { Deltas } from '@alien-worlds/token-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class TokenWorldsDeltaProcessor extends DeltaProcessor<
+export class TokenWorldsDeltaProcessor extends DeltaProcessor<
   ContractData,
   ProcessorSharedData
 > {

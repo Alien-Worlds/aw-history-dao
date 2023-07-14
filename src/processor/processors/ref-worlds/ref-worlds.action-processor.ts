@@ -12,7 +12,7 @@ import { Actions } from '@alien-worlds/ref-worlds-common';
 
 type ContractData = { [key: string]: unknown };
 
-export default class RefWorldsActionProcessor extends ActionTraceProcessor<
+export class RefWorldsActionProcessor extends ActionTraceProcessor<
   ContractData,
   ProcessorSharedData
 > {

@@ -22,7 +22,7 @@ export const getCandidateVotingPower = async (
     GetLatestCandidateQueryBuilder.create(dacId, candidateName, blockTimestamp)
   );
 
-  if (failure) {
+  if (failure || content.length === 0) {
     return 0n;
   }
 
