@@ -1,6 +1,6 @@
-import { MongoDB, QueryModel } from '@alien-worlds/api-core';
+import { MongoDB, Query, QueryBuilder } from '@alien-worlds/history-tools-starter-kit';
 
-export class GetLatestCandidateQueryModel extends QueryModel {
+export class GetLatestCandidateQueryBuilder extends QueryBuilder {
   /**
    * @returns {GetLatestCandidateQueryModel}
    */
@@ -8,8 +8,8 @@ export class GetLatestCandidateQueryModel extends QueryModel {
     dacId: string,
     candidate: string,
     blockTimestamp: Date
-  ): GetLatestCandidateQueryModel {
-    return new GetLatestCandidateQueryModel(dacId, candidate, blockTimestamp);
+  ): GetLatestCandidateQueryBuilder {
+    return new GetLatestCandidateQueryBuilder(dacId, candidate, blockTimestamp);
   }
 
   /**
@@ -24,7 +24,7 @@ export class GetLatestCandidateQueryModel extends QueryModel {
     super();
   }
 
-  toQueryParams(): unknown {
+  build(): Query {
     const { dacId, candidate, blockTimestamp } = this;
     const filter = {
       scope: dacId,

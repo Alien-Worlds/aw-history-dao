@@ -1,5 +1,7 @@
-import { startBootstrap } from '@alien-worlds/api-history-tools';
-import { DefaultBootstrapDependencies } from '@alien-worlds/history-tools-starter-kit';
+import {
+  startBootstrap,
+  DefaultBootstrapDependencies,
+} from '@alien-worlds/history-tools-starter-kit';
 import path from 'path';
 
 startBootstrap(

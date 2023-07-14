@@ -1,6 +1,8 @@
+import { DataEntityType } from '@alien-worlds/dao-worlds-common/build/actions/domain/entities';
 import {
   ActionTraceProcessor,
   ActionTraceProcessorModel,
+  ContractAction,
   DataSourceError,
   MongoQueryBuilders,
   MongoSource,
@@ -9,6 +11,7 @@ import {
   log,
 } from '@alien-worlds/history-tools-starter-kit';
 import { Actions } from '@alien-worlds/token-worlds-common';
+import { TokenWorldsActionMongoModel } from '@alien-worlds/token-worlds-common/build/actions/data/dtos';
 
 type ContractData = { [key: string]: unknown };
 

@@ -1,6 +1,7 @@
 import {
   ActionTraceProcessor,
   ActionTraceProcessorModel,
+  ContractAction,
   DataSourceError,
   MongoQueryBuilders,
   MongoSource,
@@ -9,6 +10,8 @@ import {
   log,
 } from '@alien-worlds/history-tools-starter-kit';
 import { Actions } from '@alien-worlds/dao-worlds-common';
+import { FlagRepositoryFactory } from '../../common';
+import { updateUserVotes } from './processors/user-votes/upadte-user-votes';
 
 type ContractData = { [key: string]: unknown };
 
@@ -33,32 +36,20 @@ export default class DaoWorldsActionProcessor extends ActionTraceProcessor<
       const contract = taskModelMapper.toEntity(model);
 
       if (contract.name === Actions.DaoWorldsActionName.Flagcandprof) {
-        /*
-        const flag = Entities.FlagCandidateProfile.fromStruct(
-          <DaoWorldsContract.Actions.Types.FlagcandprofStruct>data
+        //
+        const flag = contract.data as Actions.Entities.Flagcandprof;
+        const flagRepository = await FlagRepositoryFactory.create(
+          dataSource as MongoSource
         );
-        contractModel.data = flag;
-        const flagRepository = await setupFlagRepository(mongoSource);
-        flagRepository.add(flag);
-        */
+        flagRepository.add([flag]);
+        //
       } else if (contract.name === Actions.DaoWorldsActionName.Votecust) {
-        /*
-        const vote = Entities.VoteCustodian.fromStruct(
-          <DaoWorldsContract.Actions.Types.VotecustStruct>data
-        );
-        contractModel.data = vote;
-        
-        // Storing user voting history && candidate voters history
-         
-        const userVotingHistoryProcessor = new UserVotingHistoryProcessor(mongoSource);
-        await userVotingHistoryProcessor.run(contractModel);
         //
-        const candidateVotersHistoryProcessor = new CandidateVotersHistoryProcessor(
-          mongoSource
+        await updateUserVotes(
+          dataSource as MongoSource,
+          contract as ContractAction<Actions.Entities.Votecust>
         );
-        await candidateVotersHistoryProcessor.run(contractModel);
         //
-        */
       }
 
       const result = await repository.add([contract]);

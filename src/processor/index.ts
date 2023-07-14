@@ -1,5 +1,7 @@
-import { startProcessor } from '@alien-worlds/api-history-tools';
-import { DefaultProcessorDependencies } from '@alien-worlds/history-tools-starter-kit';
+import {
+  startProcessor,
+  DefaultProcessorDependencies,
+} from '@alien-worlds/history-tools-starter-kit';
 import path from 'path';
 
 startProcessor(
