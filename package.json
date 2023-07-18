@@ -42,7 +42,7 @@
   "dependencies": {
     "@alien-worlds/dao-worlds-common": "^0.0.23",
     "@alien-worlds/escrw-worlds-common": "^0.0.8",
-    "@alien-worlds/history-tools-starter-kit": "^0.0.6",
+    "@alien-worlds/history-tools-starter-kit": "^0.0.7",
     "@alien-worlds/index-worlds-common": "^0.0.22",
     "@alien-worlds/msig-worlds-common": "^0.0.5",
     "@alien-worlds/prop-worlds-common": "^0.0.9",

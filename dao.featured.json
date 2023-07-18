@@ -6,6 +6,55 @@
       "contract": ["dao.worlds"],
       "action": ["*"],
       "processor": "DaoWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["escrw.worlds"],
+      "action": ["*"],
+      "processor": "EscrwWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["index.worlds"],
+      "action": ["*"],
+      "processor": "IndexWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["msig.worlds"],
+      "action": ["*"],
+      "processor": "MsigWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["prop.worlds"],
+      "action": ["*"],
+      "processor": "PropWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["ref.worlds"],
+      "action": ["*"],
+      "processor": "RefWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["stkvt.worlds"],
+      "action": ["*"],
+      "processor": "StkvtWorldsActionProcessor"
+    },
+    {
+      "shipTraceMessageName": ["transaction_trace_v0"],
+      "shipActionTraceMessageName": ["action_trace_v0", "action_trace_v1"],
+      "contract": ["token.worlds"],
+      "action": ["*"],
+      "processor": "TokenWorldsActionProcessor"
     }
   ],
   "deltas": [
@@ -16,6 +65,62 @@
       "scope": ["*"],
       "table": ["*"],
       "processor": "DaoWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["escrw.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "EscrwWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["index.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "IndexWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["msig.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "MsigWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["prop.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "PropWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["ref.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "RefWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["stkvt.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "StkvtWorldsDeltaProcessor"
+    },
+    {
+      "shipDeltaMessageName": ["table_delta_v0"],
+      "name": ["contract_row"],
+      "code": ["token.worlds"],
+      "scope": ["*"],
+      "table": ["*"],
+      "processor": "TokenWorldsDeltaProcessor"
     }
   ]
 }
