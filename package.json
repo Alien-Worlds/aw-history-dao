@@ -9,6 +9,7 @@
     "build"
   ],
   "scripts": {
+    "api": "node build/api/index.js",
     "broadcast": "node build/broadcast/index.js",
     "boot": "node build/bootstrap/index.js",
     "reader": "node build/reader/index.js",
@@ -42,7 +43,7 @@
   "dependencies": {
     "@alien-worlds/dao-worlds-common": "^0.0.23",
     "@alien-worlds/escrw-worlds-common": "^0.0.8",
-    "@alien-worlds/history-tools-starter-kit": "^0.0.7",
+    "@alien-worlds/history-tools-starter-kit": "^0.0.15",
     "@alien-worlds/index-worlds-common": "^0.0.22",
     "@alien-worlds/msig-worlds-common": "^0.0.5",
     "@alien-worlds/prop-worlds-common": "^0.0.9",

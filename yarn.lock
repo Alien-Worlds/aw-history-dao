@@ -11,10 +11,10 @@
     node-fetch "2.6.6"
     reflect-metadata "^0.1.13"
 
-"@alien-worlds/api-history-tools@^0.0.146":
-  version "0.0.146"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/api-history-tools/0.0.146/82140731f998f5e38e44e51ab772da9d3e4ab988#82140731f998f5e38e44e51ab772da9d3e4ab988"
-  integrity sha512-HpJzSFR9jp3w5mo518/sV+djHXwD+tEjIX4jXJF8KQJPLSnaoj1smaAAZa58f2TJXDSm2aq3Sy5rHm44k6CERg==
+"@alien-worlds/api-history-tools@^0.0.154":
+  version "0.0.154"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/api-history-tools/0.0.154/2e5cc2254942b4fe4af9575081a4c5d8f7e95795#2e5cc2254942b4fe4af9575081a4c5d8f7e95795"
+  integrity sha512-bcYT7KzF/DKUx0+YXx/aj3yqdjOxaEVA/BaPOufSIsnoDIs4q22X4KsXNSmOHM9cLHU4n0r0MRw18fOzudKeHw==
   dependencies:
     "@alien-worlds/api-core" "^0.0.158"
     "@alien-worlds/block-reader" "^0.0.18"
@@ -23,7 +23,6 @@
     async "^3.2.4"
     commander "^10.0.1"
     crypto "^1.0.1"
-    express "^4.18.2"
     ts-node "^10.9.1"
 
 "@alien-worlds/block-reader@^0.0.18":
@@ -78,14 +77,15 @@
     "@alien-worlds/eosio-contract-types" "^1.0.25"
     "@alien-worlds/storage-mongodb" "^0.0.28"
 
-"@alien-worlds/history-tools-starter-kit@^0.0.7":
-  version "0.0.7"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/history-tools-starter-kit/0.0.7/349346af9f6bd9a0b70780e057efcae386fbdeec#349346af9f6bd9a0b70780e057efcae386fbdeec"
-  integrity sha512-24fxSUKAN7pG5r1WZpdZ1aefR4K5lmsWBIfLthCyl20WSFG1xyZQLSJ/62AQzq5JPP2+sr8Fr5vIVAYipDDgUg==
+"@alien-worlds/history-tools-starter-kit@^0.0.15":
+  version "0.0.15"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/history-tools-starter-kit/0.0.15/4b5595807297379f4fe3a08adcee8d997295dca0#4b5595807297379f4fe3a08adcee8d997295dca0"
+  integrity sha512-F9pYW19QmXcI1YAOjYnPS2g/qb1Rl144wPIQKXF2SmeLjM94Jp2JvY9IWpLvHrMNpSV6mGvpPjGTJ6yIIK/Grg==
   dependencies:
-    "@alien-worlds/api-history-tools" "^0.0.146"
+    "@alien-worlds/api-history-tools" "^0.0.154"
     "@alien-worlds/eos" "^0.0.20"
     "@alien-worlds/storage-mongodb" "^0.0.28"
+    express "^4.18.2"
 
 "@alien-worlds/index-worlds-common@^0.0.22":
   version "0.0.22"
