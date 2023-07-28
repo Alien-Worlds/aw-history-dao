@@ -1,10 +1,8 @@
 import { GetRoute, RouteHandler } from '@alien-worlds/aw-history-starter-kit';
-import { GetCurrentBlockNumberOutput } from '../domain/models/get-current-block-number.output';
+import { GetCurrentBlockNumberRouteIO } from './get-block-state.route-io';
 
 /**
  * @class
- *
- *
  */
 export class GetCurrentBlockNumberRoute extends GetRoute {
   public static create(handler: RouteHandler) {
@@ -12,10 +10,6 @@ export class GetCurrentBlockNumberRoute extends GetRoute {
   }
 
   private constructor(handler: RouteHandler) {
-    super('/block-state', handler, {
-      hooks: {
-        post: (output: GetCurrentBlockNumberOutput) => output.toResponse(),
-      },
-    });
+    super('/block-state', handler, new GetCurrentBlockNumberRouteIO());
   }
 }
