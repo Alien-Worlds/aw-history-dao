@@ -3,7 +3,7 @@ import {
   MongoQueryBuilders,
   MongoSource,
   RepositoryImpl,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 
 import { UserVoteRepository } from '../domain';
 import { UserVoteMongoMapper, UserVoteMongoSource } from '../data';

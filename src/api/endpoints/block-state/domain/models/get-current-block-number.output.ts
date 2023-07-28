@@ -1,4 +1,4 @@
-import { Result } from '@alien-worlds/api-core';
+import { Result } from '@alien-worlds/aw-history-starter-kit';
 
 /**
  * Represents GetCurrentBlockNumberOutput data entity.

@@ -1,4 +1,4 @@
-import { MongoDB, Query, QueryBuilder } from '@alien-worlds/history-tools-starter-kit';
+import { MongoDB, Query, QueryBuilder } from '@alien-worlds/aw-history-starter-kit';
 
 export class GetLatestCandidateQueryBuilder extends QueryBuilder {
   /**

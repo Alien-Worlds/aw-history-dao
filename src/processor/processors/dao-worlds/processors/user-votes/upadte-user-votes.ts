@@ -1,13 +1,13 @@
-import { parseToBigInt } from '@alien-worlds/api-core';
+import { parseToBigInt } from '@alien-worlds/aw-history-starter-kit';
 import { UserVoteRepositoryFactory } from '../../../../common/factories/user-vote.repository.factory';
-import { Actions, Deltas } from '@alien-worlds/dao-worlds-common';
+import { Actions, Deltas } from '@alien-worlds/aw-contract-dao-worlds';
 import {
   ContractAction,
   MongoQueryBuilders,
   MongoSource,
   RepositoryImpl,
   log,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import { GetLatestVotesQueryBuilder } from './get-latest-votes.query-builder';
 import { GetLatestCandidateQueryBuilder } from './get-latest-candidate.query-builder';
 import { UserVote, VoteAction } from '../../../../common';

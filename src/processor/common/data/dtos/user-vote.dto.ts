@@ -1,4 +1,4 @@
-import { MongoDB } from '@alien-worlds/history-tools-starter-kit';
+import { MongoDB } from '@alien-worlds/aw-history-starter-kit';
 import { VoteAction } from '../../domain/user-vote.enums';
 
 export type UserVoteMongoModel = {

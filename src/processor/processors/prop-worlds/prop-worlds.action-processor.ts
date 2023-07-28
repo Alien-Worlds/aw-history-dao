@@ -7,8 +7,8 @@ import {
   ProcessorSharedData,
   RepositoryImpl,
   log,
-} from '@alien-worlds/history-tools-starter-kit';
-import { Actions } from '@alien-worlds/prop-worlds-common';
+} from '@alien-worlds/aw-history-starter-kit';
+import { Actions } from '@alien-worlds/aw-contract-prop-worlds';
 
 type ContractData = { [key: string]: unknown };
 

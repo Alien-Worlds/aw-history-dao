@@ -1,4 +1,4 @@
-import { DataEntityType } from '@alien-worlds/dao-worlds-common/build/actions/domain/entities';
+import { DataEntityType } from '@alien-worlds/aw-contract-dao-worlds/build/actions/domain/entities';
 import {
   ActionTraceProcessor,
   ActionTraceProcessorModel,
@@ -9,9 +9,9 @@ import {
   ProcessorSharedData,
   RepositoryImpl,
   log,
-} from '@alien-worlds/history-tools-starter-kit';
-import { Actions } from '@alien-worlds/token-worlds-common';
-import { TokenWorldsActionMongoModel } from '@alien-worlds/token-worlds-common/build/actions/data/dtos';
+} from '@alien-worlds/aw-history-starter-kit';
+import { Actions } from '@alien-worlds/aw-contract-token-worlds';
+import { TokenWorldsActionMongoModel } from '@alien-worlds/aw-contract-token-worlds/build/actions/data/dtos';
 
 type ContractData = { [key: string]: unknown };
 

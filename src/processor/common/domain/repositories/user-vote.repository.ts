@@ -1,4 +1,4 @@
-import { Repository, injectable } from '@alien-worlds/history-tools-starter-kit';
+import { Repository, injectable } from '@alien-worlds/aw-history-starter-kit';
 import { UserVote } from '../entities/user-vote';
 import { UserVoteMongoModel } from '../../data';
 

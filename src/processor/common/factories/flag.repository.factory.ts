@@ -1,10 +1,10 @@
-import { Actions } from '@alien-worlds/dao-worlds-common';
+import { Actions } from '@alien-worlds/aw-contract-dao-worlds';
 import {
   MongoConfig,
   MongoQueryBuilders,
   MongoSource,
   RepositoryImpl,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import { FlagRepository } from '../domain/repositories/flag.repository';
 import { FlagMongoSource } from '../data/data-sources/flag.mongo.source';
 

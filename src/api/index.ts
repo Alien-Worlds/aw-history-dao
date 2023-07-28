@@ -2,7 +2,7 @@ import {
   DefaultApiDependencies,
   log,
   startApi,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import { setupIoc } from './endpoints';
 import { buildRoutes } from './endpoints/routes';
 

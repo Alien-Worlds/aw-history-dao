@@ -7,8 +7,8 @@ import {
   ProcessorSharedData,
   RepositoryImpl,
   log,
-} from '@alien-worlds/history-tools-starter-kit';
-import { Deltas } from '@alien-worlds/escrw-worlds-common';
+} from '@alien-worlds/aw-history-starter-kit';
+import { Deltas } from '@alien-worlds/aw-contract-escrw-worlds';
 
 type ContractData = { [key: string]: unknown };
 

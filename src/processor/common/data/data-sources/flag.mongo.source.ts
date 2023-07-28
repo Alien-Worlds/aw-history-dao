@@ -1,8 +1,5 @@
-import * as DaoWorldsCommon from '@alien-worlds/dao-worlds-common';
-import {
-  MongoCollectionSource,
-  MongoSource,
-} from '@alien-worlds/history-tools-starter-kit';
+import * as DaoWorldsCommon from '@alien-worlds/aw-contract-dao-worlds';
+import { MongoCollectionSource, MongoSource } from '@alien-worlds/aw-history-starter-kit';
 
 export class FlagMongoSource extends MongoCollectionSource<DaoWorldsCommon.Actions.Types.FlagcandprofMongoModel> {
   /**

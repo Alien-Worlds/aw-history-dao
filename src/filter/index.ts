@@ -1,7 +1,7 @@
 import {
   startFilter,
   DefaultFilterDependencies,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import path from 'path';
 
 startFilter(

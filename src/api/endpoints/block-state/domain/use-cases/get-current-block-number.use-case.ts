@@ -4,7 +4,7 @@ import {
   UseCase,
   inject,
   injectable,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import { BlockStateToken } from '../../../ioc.config';
 
 @injectable()

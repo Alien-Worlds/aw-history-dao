@@ -1,4 +1,4 @@
-import { Container } from '@alien-worlds/history-tools-starter-kit';
+import { Container } from '@alien-worlds/aw-history-starter-kit';
 import { BlockStateController, GetCurrentBlockNumberRoute } from './block-state';
 
 export const buildRoutes = (container: Container) => {

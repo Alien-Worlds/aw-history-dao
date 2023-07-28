@@ -8,14 +8,15 @@ The contract components are implemented through the `@alien-worlds/<contract_nam
 
 This package is dependent on the following packages:
 
-- [@alien-worlds/history-tools-starter-kit](https://github.com/Alien-Worlds/history-tools-starter-kit)
-- [@alien-worlds/dao-worlds-common](https://github.com/Alien-Worlds/dao-worlds-common)
-- [@alien-worlds/index-worlds-common](https://github.com/Alien-Worlds/index-worlds-common)
-- [@alien-worlds/stkvt-worlds-common](https://github.com/Alien-Worlds/stkvt-worlds-common)
-- [@alien-worlds/token-worlds-common](https://github.com/Alien-Worlds/token-worlds-common)
-- [@alien-worlds/ref-worlds-common](https://github.com/Alien-Worlds/ref-worlds-common)
-- [@alien-worlds/prop-worlds-common](https://github.com/Alien-Worlds/prop-worlds-common)
-- [@alien-worlds/escrw-worlds-common](https://github.com/Alien-Worlds/escrw-worlds-common)
+- [@alien-worlds/aw-history-starter-kit](https://github.com/Alien-Worlds/aw-history-starter-kit
+)
+- [@alien-worlds/aw-contract-dao-worlds](https://github.com/Alien-Worlds/dao-worlds-common)
+- [@alien-worlds/aw-contract-index-worlds](https://github.com/Alien-Worlds/index-worlds-common)
+- [@alien-worlds/aw-contract-stkvt-worlds](https://github.com/Alien-Worlds/stkvt-worlds-common)
+- [@alien-worlds/aw-contract-token-worlds](https://github.com/Alien-Worlds/token-worlds-common)
+- [@alien-worlds/aw-contract-ref-worlds](https://github.com/Alien-Worlds/ref-worlds-common)
+- [@alien-worlds/aw-contract-prop-worlds](https://github.com/Alien-Worlds/prop-worlds-common)
+- [@alien-worlds/aw-contract-escrw-worlds](https://github.com/Alien-Worlds/escrw-worlds-common)
 
 ## Table of Contents
 

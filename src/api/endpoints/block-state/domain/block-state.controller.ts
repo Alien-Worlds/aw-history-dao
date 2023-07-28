@@ -1,4 +1,4 @@
-import { inject, injectable } from '@alien-worlds/api-core';
+import { inject, injectable } from '@alien-worlds/aw-history-starter-kit';
 import { GetCurrentBlockNumberOutput } from './models/get-current-block-number.output';
 import { GetCurrentBlockNumberUseCase } from './use-cases/get-current-block-number.use-case';
 
@@ -21,7 +21,7 @@ export class BlockStateController {
    */
   public async blockState(): Promise<GetCurrentBlockNumberOutput> {
     const result = await this.getCurrentBlockNumberUseCase.execute();
-    
+
     return GetCurrentBlockNumberOutput.create(result);
   }
 }

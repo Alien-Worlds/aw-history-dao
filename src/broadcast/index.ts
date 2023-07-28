@@ -1,3 +1,3 @@
-import { startBroadcast } from '@alien-worlds/history-tools-starter-kit';
+import { startBroadcast } from '@alien-worlds/aw-history-starter-kit';
 
 startBroadcast();

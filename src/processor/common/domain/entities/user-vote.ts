@@ -1,4 +1,4 @@
-import { Entity, UnknownObject } from '@alien-worlds/history-tools-starter-kit';
+import { Entity, UnknownObject } from '@alien-worlds/aw-history-starter-kit';
 import { VoteAction } from '../user-vote.enums';
 import { UserVoteJsonModel } from '../../data';
 

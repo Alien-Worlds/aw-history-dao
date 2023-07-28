@@ -8,8 +8,8 @@ import {
   ProcessorSharedData,
   RepositoryImpl,
   log,
-} from '@alien-worlds/history-tools-starter-kit';
-import { Actions } from '@alien-worlds/dao-worlds-common';
+} from '@alien-worlds/aw-history-starter-kit';
+import { Actions } from '@alien-worlds/aw-contract-dao-worlds';
 import { FlagRepositoryFactory } from '../../common';
 import { updateUserVotes } from './processors/user-votes/upadte-user-votes';
 

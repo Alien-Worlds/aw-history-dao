@@ -2,7 +2,7 @@ import {
   MongoDB,
   MongoMapper,
   UnknownObject,
-} from '@alien-worlds/history-tools-starter-kit';
+} from '@alien-worlds/aw-history-starter-kit';
 import { UserVote } from '../../domain/entities/user-vote';
 import { UserVoteMongoModel } from '../dtos/user-vote.dto';
 import { VoteAction } from '../../domain/user-vote.enums';

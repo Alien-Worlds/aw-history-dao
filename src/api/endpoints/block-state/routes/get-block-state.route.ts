@@ -1,4 +1,4 @@
-import { GetRoute, RouteHandler } from '@alien-worlds/api-core';
+import { GetRoute, RouteHandler } from '@alien-worlds/aw-history-starter-kit';
 import { GetCurrentBlockNumberOutput } from '../domain/models/get-current-block-number.output';
 
 /**
