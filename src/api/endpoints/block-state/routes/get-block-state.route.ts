@@ -10,6 +10,8 @@ export class GetCurrentBlockNumberRoute extends GetRoute {
   }
 
   private constructor(handler: RouteHandler) {
-    super('/block-state', handler, new GetCurrentBlockNumberRouteIO());
+    super('/block-state', handler, {
+      io: new GetCurrentBlockNumberRouteIO(),
+    });
   }
 }

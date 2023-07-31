@@ -1,7 +1,7 @@
-import { DefaultRouteIO, Response } from '@alien-worlds/aw-history-starter-kit';
+import { Response, RouteIO } from '@alien-worlds/aw-history-starter-kit';
 import { GetCurrentBlockNumberOutput } from '../domain';
 
-export class GetCurrentBlockNumberRouteIO extends DefaultRouteIO {
+export class GetCurrentBlockNumberRouteIO implements RouteIO {
   public toResponse(output: GetCurrentBlockNumberOutput): Response {
     const { result } = output;
 
