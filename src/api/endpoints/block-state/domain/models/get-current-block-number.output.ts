@@ -10,15 +10,15 @@ export class GetCurrentBlockNumberOutput implements IO {
     return new GetCurrentBlockNumberOutput(result);
   }
 
-  constructor(public readonly result: Result<bigint>) {}
+  constructor(public readonly result: Result<bigint>) { }
 
   public toJSON(): UnknownObject {
-    if (this.result) {
+    if (!this.result || this.result.isFailure) {
       return {};
     }
 
     return {
-      currentBlockNumber: this.result.content.toString,
+      currentBlockNumber: this.result.content.toString(),
     };
   }
 }
