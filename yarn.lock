@@ -16,6 +16,15 @@
     "@alien-worlds/aw-storage-mongodb" "^0.0.6"
     eosjs "^22.1.0"
 
+"@alien-worlds/aw-antelope@^0.0.35":
+  version "0.0.35"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-antelope/0.0.35/d63d5aa47f657d87eb29bc3c8e515f81d8512956#d63d5aa47f657d87eb29bc3c8e515f81d8512956"
+  integrity sha512-cS/TtKrA6bduaQbAvYd53zhNTlmy9GmbzlvQh6KTZ28naKwK8SVSZTBlRS1eKShZBDe/gmzHjyBPqb9p7xPy7g==
+  dependencies:
+    "@alien-worlds/aw-core" "^0.0.6"
+    "@alien-worlds/aw-storage-mongodb" "^0.0.6"
+    eosjs "^22.1.0"
+
 "@alien-worlds/aw-broadcast@^0.0.5":
   version "0.0.5"
   resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-broadcast/0.0.5/2f6d4d0c6cfe8b039efd758a40ad23d18bee2efd#2f6d4d0c6cfe8b039efd758a40ad23d18bee2efd"
@@ -105,20 +114,20 @@
     node-fetch "2.6.6"
     reflect-metadata "^0.1.13"
 
-"@alien-worlds/aw-history-starter-kit@^0.0.3":
-  version "0.0.3"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-history-starter-kit/0.0.3/dc5ec00e07e0e1d7e2ca69e6e83635cbcc580157#dc5ec00e07e0e1d7e2ca69e6e83635cbcc580157"
-  integrity sha512-EhxG9/rpzSqa8VQtyUnjngbdmabozysA5oKxwzLOAJuBimg+J0RP2AelH+Cw0WdPXVcqT/fcdUoGZOLiHggApg==
+"@alien-worlds/aw-history-starter-kit@^0.0.4":
+  version "0.0.4"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-history-starter-kit/0.0.4/364cec90427608f6313180bbee15d8d4ad3bdfa2#364cec90427608f6313180bbee15d8d4ad3bdfa2"
+  integrity sha512-yW1Hli9m1PSKSUUAqCrz9Qy9TNOp+NlQpMWDcyHPo10qaPjv3/+d4CjLcr0kRGHu4csGphnF0OImRD6lsZTL1w==
   dependencies:
-    "@alien-worlds/aw-antelope" "^0.0.30"
-    "@alien-worlds/aw-history" "^0.0.3"
+    "@alien-worlds/aw-antelope" "^0.0.35"
+    "@alien-worlds/aw-history" "^0.0.7"
     "@alien-worlds/aw-storage-mongodb" "^0.0.6"
     express "^4.18.2"
 
-"@alien-worlds/aw-history@^0.0.3":
-  version "0.0.3"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-history/0.0.3/4a5caaa0351efc76863147f51937fc297e519f45#4a5caaa0351efc76863147f51937fc297e519f45"
-  integrity sha512-oApj9132wfBlrPSrOArc1D0gHSSKxOHNMSi3RJmccHOhjeHrH3PUn4zl3VMnLoq8b/qF8Pn/bkrrYN5TNt4loQ==
+"@alien-worlds/aw-history@^0.0.7":
+  version "0.0.7"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-history/0.0.7/ce9cb57137fadc946bb0da2a4b5a593862f03532#ce9cb57137fadc946bb0da2a4b5a593862f03532"
+  integrity sha512-+TUrenRKfYAQgv7DqJJCmZuB0lRGNZJS13rRi45BhjePZOv3B/1X6Lv3dWJ70GWTz9hRkSPk2gPW0TraJCGUvQ==
   dependencies:
     "@alien-worlds/aw-broadcast" "^0.0.5"
     "@alien-worlds/aw-core" "^0.0.6"
