@@ -33,10 +33,10 @@
     "@alien-worlds/aw-core" "^0.0.6"
     nanoid "^3.0.0"
 
-"@alien-worlds/aw-contract-dao-worlds@^0.0.28":
-  version "0.0.28"
-  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-contract-dao-worlds/0.0.28/b1c80cf1044dfd23199dc636638211a1290c71fe#b1c80cf1044dfd23199dc636638211a1290c71fe"
-  integrity sha512-q6Awn/+tbheSLpZN5R2RD2h0HLd/mpuu51rNkW9DoqKI7QjcnXoc8r4ewxKTgHQrFZMPTucCeLrvo1oMY2mM1g==
+"@alien-worlds/aw-contract-dao-worlds@^0.0.29":
+  version "0.0.29"
+  resolved "https://npm.pkg.github.com/download/@alien-worlds/aw-contract-dao-worlds/0.0.29/73467e39171a6e4f80a6319bb229409d595ecb48#73467e39171a6e4f80a6319bb229409d595ecb48"
+  integrity sha512-hFnFez9eHP4mGcz/BIkchEmjtNwkULyRg+rGAiKl8na2QNqO/CmKDTHdmwzw/vF5CJxS7+OaQYvI74F4JA+Pxg==
   dependencies:
     "@alien-worlds/aw-antelope" "^0.0.30"
     "@alien-worlds/aw-core" "^0.0.6"
