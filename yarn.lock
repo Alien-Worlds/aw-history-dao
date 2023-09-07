@@ -89,19 +89,19 @@
     node-fetch "2.6.6"
     reflect-metadata "^0.1.13"
 
-"@alien-worlds/aw-history-starter-kit@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@alien-worlds/aw-history-starter-kit/-/aw-history-starter-kit-0.0.9.tgz#09528ae903720a2d4914c9e7064360d6d5445bf7"
-  integrity sha512-3ZawhtSGmZPRCpIhOfo+VQArrYx+A0ECJ2oBB55OiSrzqgkiAKQTNHG3jp8hDR0tT7r6nIpaCVpkaKLsTSekRA==
+"@alien-worlds/aw-history-starter-kit@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@alien-worlds/aw-history-starter-kit/-/aw-history-starter-kit-0.0.10.tgz#04e969a47378d00825723b5cb5db141b9fb0bd88"
+  integrity sha512-CMbuUf3iAdMNHzL1poXV7cu17B77O36YD73ZQKorqo3LUpjfS3lzf6PYuwWvfdoLEp8cWjcgv3Y+ctepCgygUQ==
   dependencies:
     "@alien-worlds/aw-antelope" "^0.0.45"
-    "@alien-worlds/aw-history" "^0.0.11"
+    "@alien-worlds/aw-history" "^0.0.12"
     express "^4.18.2"
 
-"@alien-worlds/aw-history@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@alien-worlds/aw-history/-/aw-history-0.0.11.tgz#02a261c64daa87320ddea15b93bf8b9d8875c1bc"
-  integrity sha512-aeXFIUuwPqL2w7/kNMoJ4xJo1lfOxQFFfz3IKUlptlofbqwgZ1odNfeZXLnO2Z0fJZfYi9uMB7R4hbhRk2QgwQ==
+"@alien-worlds/aw-history@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@alien-worlds/aw-history/-/aw-history-0.0.12.tgz#ab8a992a1838fab74c782741031a7b7fa8050331"
+  integrity sha512-I+wasxN3t8+/zdJVs0dIAIBZStzRlw+zIf6yUSebK10o+vIB+xXDgoYZsaJBfkSdSLKlqennN3MucXoxQ093Bw==
   dependencies:
     "@alien-worlds/aw-broadcast" "^0.0.12"
     "@alien-worlds/aw-core" "^0.0.21"
