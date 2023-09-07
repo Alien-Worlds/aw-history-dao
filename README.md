@@ -1,22 +1,21 @@
 # DAO History Tools
 
-DAO History tools are a collection of tools designed to retrieve contract data associated with DAOs (Decentralized Autonomous Organizations) from the EOS blockchain. These tools are built upon the components of the history tools starter kit, which utilize MongoDB and EOS. The entire operational logic of the history tools is implemented through dependencies, meaning this repository solely contains scripts that execute individual processes and processors necessary for data processing from the designated "featured" contracts.
+DAO History tools are a collection of tools designed to retrieve contract data associated with DAOs (Decentralized Autonomous Organizations) from the Antelope blockchain. These tools are built upon the components of the history tools starter kit, which utilize MongoDB and EOSjs. The entire operational logic of the history tools is implemented through dependencies, meaning this repository solely contains scripts that execute individual processes and processors necessary for data processing from the designated "featured" contracts.
 
-The contract components are implemented through the `@alien-worlds/<contract_name>-common` packages. These components, such as repositories, entities, and mappers, are exclusively used in processors. All pertinent contracts, along with their actions and deltas, are encompassed within the `dao.featured.json` file. If you wish to modify or add a contract, action, or delta, you must include it in this JSON file and create or adjust an existing processor in the `processor/processors` directory. Additionally, you should consider potential modifications to the `index.ts` file to ensure that all available processors are included.
+The contract components are implemented through the `@alien-worlds/aw-contract-<contract_name>` packages. These components, such as repositories, entities, and mappers, are exclusively used in processors. All pertinent contracts, along with their actions and deltas, are encompassed within the `dao.featured.json` file. If you wish to modify or add a contract, action, or delta, you must include it in this JSON file and create or adjust an existing processor in the `processor/processors` directory. Additionally, you should consider potential modifications to the `index.ts` file to ensure that all available processors are included.
 
 ## Dependencies
 
 This package is dependent on the following packages:
 
-- [@alien-worlds/aw-history-starter-kit](https://github.com/Alien-Worlds/aw-history-starter-kit
-)
-- [@alien-worlds/aw-contract-dao-worlds](https://github.com/Alien-Worlds/dao-worlds-common)
-- [@alien-worlds/aw-contract-index-worlds](https://github.com/Alien-Worlds/index-worlds-common)
-- [@alien-worlds/aw-contract-stkvt-worlds](https://github.com/Alien-Worlds/stkvt-worlds-common)
-- [@alien-worlds/aw-contract-token-worlds](https://github.com/Alien-Worlds/token-worlds-common)
-- [@alien-worlds/aw-contract-ref-worlds](https://github.com/Alien-Worlds/ref-worlds-common)
-- [@alien-worlds/aw-contract-prop-worlds](https://github.com/Alien-Worlds/prop-worlds-common)
-- [@alien-worlds/aw-contract-escrw-worlds](https://github.com/Alien-Worlds/escrw-worlds-common)
+- [@alien-worlds/aw-history-starter-kit](https://github.com/Alien-Worlds/aw-history-starter-kit)
+- [@alien-worlds/aw-contract-dao-worlds](https://github.com/Alien-Worlds/aw-contract-dao-worlds)
+- [@alien-worlds/aw-contract-index-worlds](https://github.com/Alien-Worlds/aw-contract-index-worlds)
+- [@alien-worlds/aw-contract-stkvt-worlds](https://github.com/Alien-Worlds/aw-contract-stkvt-worlds)
+- [@alien-worlds/aw-contract-token-worlds](https://github.com/Alien-Worlds/aw-contract-token-worlds)
+- [@alien-worlds/aw-contract-ref-worlds](https://github.com/Alien-Worlds/aw-contract-ref-worlds)
+- [@alien-worlds/aw-contract-prop-worlds](https://github.com/Alien-Worlds/aw-contract-prop-worlds)
+- [@alien-worlds/aw-contract-escrw-worlds](https://github.com/Alien-Worlds/aw-contract-escrw-worlds)
 
 ## Table of Contents
 
@@ -31,7 +30,7 @@ This package is dependent on the following packages:
 1. Clone this repository:
 
    ```shell
-   git clone https://github.com/Alien-Worlds/dao-history-tools.git
+   git clone https://github.com/Alien-Worlds/aw-history-dao.git
    ```
 
 2. Install the dependencies:
@@ -40,7 +39,7 @@ This package is dependent on the following packages:
    yarn
    ```
 
-3. Configure the DAO History Tools by setting up environment variables or editing the configuration files as needed. The list of required variables can be found in the `./empty.env` file and their descriptions [here](https://github.com/Alien-Worlds/history-tools-starter-kit/blob/main/tutorials/config-vars.md)
+3. Configure the DAO History Tools by setting up environment variables or editing the configuration files as needed. The list of required variables can be found in the `./empty.env` file and their descriptions [here](https://github.com/Alien-Worlds/aw-history-starter-kit/blob/main/tutorials/config-vars.md)
 
 ## Startup
 
@@ -67,7 +66,7 @@ yarn processor
 
 A tutorial on how to create a new processor can be found in the tutorials available in the **History Tools Starter Kit**.
 
-- [Using History Tools Starter Kit](https://github.com/Alien-Worlds/history-tools-starter-kit/blob/main/tutorials/using-history-tools-starter-kit.md)
+- [Using History Tools Starter Kit](https://github.com/Alien-Worlds/aw-history-starter-kit/blob/main/tutorials/using-history-tools-starter-kit.md)
 
 ## Contributing
 
