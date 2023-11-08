@@ -49,6 +49,6 @@
     "@alien-worlds/aw-contract-ref-worlds": "^0.0.13",
     "@alien-worlds/aw-contract-stkvt-worlds": "^0.0.24",
     "@alien-worlds/aw-contract-token-worlds": "^0.0.33",
-    "@alien-worlds/aw-history-starter-kit": "^0.0.10"
+    "@alien-worlds/aw-history-starter-kit": "^0.0.9"
   }
 }
